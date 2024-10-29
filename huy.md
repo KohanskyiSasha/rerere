@@ -26,6 +26,7 @@ int main()fddhbdt
     cout << "Всього пройшло\t" << tm << "\tхвилин" << endl;
 
 
-    wVEBYTR UTNU RE RS 
-}
+
+    dfgfsdcgxeercgsv
+    sergcxrvg
 
