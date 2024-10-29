@@ -8,8 +8,8 @@
 
 
 using namespace std;
-
-int main()
+ghjfjdgh
+int main()fddhbdt
 {
     //Завдання 1
     SetConsoleCP(1251);
@@ -25,5 +25,7 @@ int main()
     cout << "Всього пройшло\t" << sc << "\tсекунд" << endl;
     cout << "Всього пройшло\t" << tm << "\tхвилин" << endl;
 
+
+    wVEBYTR UTNU RE RS 
 }
 
