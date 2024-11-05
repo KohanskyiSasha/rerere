@@ -1,0 +1,23 @@
+#define _USE_MATH_DEFINES
+#include <math.h>
+#include <iomanip>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	//====================while==========================
+	
+	int x1 = 1, x2 = 5;
+	double y, h = 0.4;
+	double x = x1;
+
+	while (x<=x2) {
+		y = pow(sin(x * M_PI / 180), 3) + 3 * pow(x, 2) + 3;
+		cout << setw(10) << "x =" << x << setw(10) << "y =" << y << endl;
+		x = x + h;
+	}
+	
+	system("pause");
+}
