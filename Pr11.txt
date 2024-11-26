@@ -1,0 +1,76 @@
+
+#include <iostream>
+#include <iomanip>
+#include <windows.h>
+
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    const int  n = 3;
+    const int row = 4;
+    const int col = 5;
+    int a[row][col];
+    int b[row][n];
+    int max_value, c, d;
+
+    srand(time(NULL));
+
+    cout << "Matrix :" << endl;
+
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            a[i][j] = rand() % 61 - 30;
+            cout << setw(5) << a[i][j];
+        }
+        cout << endl;
+    }
+
+    for(int i = 0; i< row; i++) {
+        max_value = a[i][0];
+        c = i;
+        d = 0;
+
+        for (int j = 0; j < col; j++) {
+            if (max_value < a[i][j]) { 
+                max_value = a[i][j]; 
+                d = j;
+            }
+        }
+           b[i][0] = max_value;
+           b[i][1] = c +1;
+           b[i][2] = d +1; 
+        //cout << max_value << endl;
+    }
+
+    
+    
+    for (int j = 0; j < 1; j++) {
+        max_value = b[0][j];
+        c = b[0][1];
+        d = b[0][2];
+
+        for (int i = 0; i < row; i++) {
+            if (max_value > b[i][j]) {
+                max_value = b[i][j];
+                c = b[i][1];
+                d = b[i][2];
+            }
+        }
+        cout << "Найменше значення:" << max_value << endl;
+        cout << "Індекс i :" << c << endl;
+        cout << "Індекс j :" << d << endl;
+    }
+    
+    /*
+    //Виписка матриці(Значення\ індекс і\ індекс j)
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << setw(5) << b[i][j];
+        }
+        cout << endl;
+    }
+    */
+}
