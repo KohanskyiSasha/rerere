@@ -3,7 +3,9 @@ int main()
 {
 	//====================while==========================
 	
-
+asdfdfasdf
+asdfasfdsd
+adsffasdfasdfa
 
 	while (x<=x2) {
 		y = pow(sin(x * M_PI / 180), 3) + 3 * pow(x, 2) + 3;
@@ -11,5 +13,4 @@ int main()
 		x = x + h;
 	}
 	
-	system("pause");
 }
