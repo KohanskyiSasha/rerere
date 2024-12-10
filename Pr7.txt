@@ -3,9 +3,7 @@ int main()
 {
 	//====================while==========================
 	
-	int x1 = 1, x2 = 5;
-	double y, h = 0.4;
-	double x = x1;
+
 
 	while (x<=x2) {
 		y = pow(sin(x * M_PI / 180), 3) + 3 * pow(x, 2) + 3;
