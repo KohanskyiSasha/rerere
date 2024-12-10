@@ -7,8 +7,7 @@ using namespace std;
 
 int main()
 {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
+
     const int  n = 3;
     const int row = 4;
     const int col = 5;
@@ -36,7 +35,7 @@ int main()
         for (int j = 0; j < col; j++) {
             if (max_value < a[i][j]) { 
                 max_value = a[i][j]; 
-                d = j;
+
             }
         }
            b[i][0] = max_value;
